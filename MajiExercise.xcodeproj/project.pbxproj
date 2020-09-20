@@ -20,7 +20,7 @@
 		25332A85251729D600942334 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A84251729D600942334 /* BaseTableViewController.swift */; };
 		25332A8825172AF900942334 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A8725172AF900942334 /* Strings.swift */; };
 		25332A8A25172B1800942334 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A8925172B1800942334 /* Constants.swift */; };
-		25332A8C25172BCE00942334 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A8B25172BCE00942334 /* HistoryTableViewController.swift */; };
+		25332A8C25172BCE00942334 /* HistoryRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A8B25172BCE00942334 /* HistoryRecordViewController.swift */; };
 		25332A912517318C00942334 /* MajiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A902517318C00942334 /* MajiClient.swift */; };
 		25332A932517364C00942334 /* MajiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A922517364C00942334 /* MajiRequest.swift */; };
 		25332A95251736D000942334 /* MoyaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A94251736D000942334 /* MoyaConfig.swift */; };
@@ -73,7 +73,7 @@
 		25332A84251729D600942334 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		25332A8725172AF900942334 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		25332A8925172B1800942334 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		25332A8B25172BCE00942334 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		25332A8B25172BCE00942334 /* HistoryRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRecordViewController.swift; sourceTree = "<group>"; };
 		25332A902517318C00942334 /* MajiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajiClient.swift; sourceTree = "<group>"; };
 		25332A922517364C00942334 /* MajiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajiRequest.swift; sourceTree = "<group>"; };
 		25332A94251736D000942334 /* MoyaConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaConfig.swift; sourceTree = "<group>"; };
@@ -192,7 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				25332A512517245E00942334 /* MainViewController.swift */,
-				25332A8B25172BCE00942334 /* HistoryTableViewController.swift */,
+				25332A8B25172BCE00942334 /* HistoryRecordViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -482,7 +482,7 @@
 				25332A95251736D000942334 /* MoyaConfig.swift in Sources */,
 				25332A4E2517245E00942334 /* AppDelegate.swift in Sources */,
 				25332A582517245E00942334 /* MajiExercise.xcdatamodeld in Sources */,
-				25332A8C25172BCE00942334 /* HistoryTableViewController.swift in Sources */,
+				25332A8C25172BCE00942334 /* HistoryRecordViewController.swift in Sources */,
 				25332A982517384800942334 /* KeyedDecodingContainer+Extension.swift in Sources */,
 				25332A9E25173A7600942334 /* BaseModel.swift in Sources */,
 				25332A932517364C00942334 /* MajiRequest.swift in Sources */,

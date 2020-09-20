@@ -1,5 +1,5 @@
 //
-//  HistoryTableViewController.swift
+//  HistoryRecordViewController.swift
 //  MajiExercise
 //
 //  Created by Ting on 2020/9/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HistoryTableViewController: BaseTableViewController {
+class HistoryRecordViewController: BaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

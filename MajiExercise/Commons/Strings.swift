@@ -10,9 +10,10 @@ import UIKit
 
 struct Strings {
     struct Main {
-        static let MainTitle = NSLocalizedString("Main", comment: "Main")
+        static let MainTitle = NSLocalizedString("Github API Summary", comment: "Github API Summary")
+        static let DataRequest = NSLocalizedString("The returned data is:", comment: "The returned data:")
     }
     struct History {
-           static let HistoryTitle = NSLocalizedString("History", comment: "History")
-       }
+        static let HistoryTitle = NSLocalizedString("History Summary", comment: "History Summary")
+    }
 }
