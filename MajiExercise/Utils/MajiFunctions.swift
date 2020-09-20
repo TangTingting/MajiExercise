@@ -42,6 +42,8 @@ class MajiFunctions: NSObject {
             history.isNew = true
             CoreDataManager.shared.saveHistoryDataWith(history: history)
             
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "newData"), object: self, userInfo: ["newData": history])
+            
         }) { (code, message) in
             print("message=\(message)")
         }

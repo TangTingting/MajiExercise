@@ -18,6 +18,15 @@ class MainViewController: BaseViewController {
     var dataDic:NSDictionary?
     var dataText = ""
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self, selector: #selector(updateData(notification:)), name: NSNotification.Name(rawValue: "newData"), object: nil)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = Strings.Main.MainTitle
@@ -75,6 +84,11 @@ class MainViewController: BaseViewController {
         } catch {
             fatalError();
         }
+    }
+    
+    @objc func updateData(notification: Notification) {
+        let data = notification.userInfo!["newData"] as! History
+        dataTextView.text = data.dataText
     }
     
     @objc func gotoHistory (){
