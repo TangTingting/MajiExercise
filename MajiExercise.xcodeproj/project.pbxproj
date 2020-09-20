@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		25332A4E2517245E00942334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A4D2517245E00942334 /* AppDelegate.swift */; };
 		25332A502517245E00942334 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A4F2517245E00942334 /* SceneDelegate.swift */; };
-		25332A522517245E00942334 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A512517245E00942334 /* ViewController.swift */; };
+		25332A522517245E00942334 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A512517245E00942334 /* MainViewController.swift */; };
 		25332A552517245E00942334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25332A532517245E00942334 /* Main.storyboard */; };
 		25332A582517245E00942334 /* MajiExercise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25332A562517245E00942334 /* MajiExercise.xcdatamodeld */; };
 		25332A5A2517246000942334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25332A592517246000942334 /* Assets.xcassets */; };
 		25332A5D2517246000942334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25332A5B2517246000942334 /* LaunchScreen.storyboard */; };
 		25332A682517246000942334 /* MajiExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A672517246000942334 /* MajiExerciseTests.swift */; };
 		25332A732517246000942334 /* MajiExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A722517246000942334 /* MajiExerciseUITests.swift */; };
+		25332A832517299C00942334 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A822517299C00942334 /* BaseViewController.swift */; };
+		25332A85251729D600942334 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A84251729D600942334 /* BaseTableViewController.swift */; };
+		25332A8825172AF900942334 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A8725172AF900942334 /* Strings.swift */; };
+		25332A8A25172B1800942334 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A8925172B1800942334 /* Constants.swift */; };
+		25332A8C25172BCE00942334 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A8B25172BCE00942334 /* HistoryTableViewController.swift */; };
 		7C1ACE6E1F63AC765B4636DD /* Pods_MajiExerciseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D025760104BD895B79C701 /* Pods_MajiExerciseTests.framework */; };
 		85786E3042E07346418F8C09 /* Pods_MajiExercise_MajiExerciseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BC3B397E79AB1A403D820D /* Pods_MajiExercise_MajiExerciseUITests.framework */; };
 		E6E9D1F71AF5B242B6E67052 /* Pods_MajiExercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 678BD8C51B4C692C548BBE38 /* Pods_MajiExercise.framework */; };
@@ -45,7 +50,7 @@
 		25332A4A2517245E00942334 /* MajiExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MajiExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25332A4D2517245E00942334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25332A4F2517245E00942334 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		25332A512517245E00942334 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		25332A512517245E00942334 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		25332A542517245E00942334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25332A572517245E00942334 /* MajiExercise.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MajiExercise.xcdatamodel; sourceTree = "<group>"; };
 		25332A592517246000942334 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +62,11 @@
 		25332A6E2517246000942334 /* MajiExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MajiExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25332A722517246000942334 /* MajiExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajiExerciseUITests.swift; sourceTree = "<group>"; };
 		25332A742517246000942334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25332A822517299C00942334 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		25332A84251729D600942334 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		25332A8725172AF900942334 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		25332A8925172B1800942334 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		25332A8B25172BCE00942334 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		678BD8C51B4C692C548BBE38 /* Pods_MajiExercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MajiExercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98FD59D692C90CECB3EE5F86 /* Pods-MajiExercise-MajiExerciseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajiExercise-MajiExerciseUITests.release.xcconfig"; path = "Target Support Files/Pods-MajiExercise-MajiExerciseUITests/Pods-MajiExercise-MajiExerciseUITests.release.xcconfig"; sourceTree = "<group>"; };
 		ABFC4BF51F8169E850C8DC70 /* Pods-MajiExerciseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajiExerciseTests.debug.xcconfig"; path = "Target Support Files/Pods-MajiExerciseTests/Pods-MajiExerciseTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,9 +128,11 @@
 		25332A4C2517245E00942334 /* MajiExercise */ = {
 			isa = PBXGroup;
 			children = (
+				25332A812517295A00942334 /* Controllers */,
+				25332A80251726D400942334 /* Core */,
+				25332A8625172A5500942334 /* Commons */,
 				25332A4D2517245E00942334 /* AppDelegate.swift */,
 				25332A4F2517245E00942334 /* SceneDelegate.swift */,
-				25332A512517245E00942334 /* ViewController.swift */,
 				25332A532517245E00942334 /* Main.storyboard */,
 				25332A592517246000942334 /* Assets.xcassets */,
 				25332A5B2517246000942334 /* LaunchScreen.storyboard */,
@@ -148,6 +160,33 @@
 			path = MajiExerciseUITests;
 			sourceTree = "<group>";
 		};
+		25332A80251726D400942334 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				25332A822517299C00942334 /* BaseViewController.swift */,
+				25332A84251729D600942334 /* BaseTableViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		25332A812517295A00942334 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				25332A512517245E00942334 /* MainViewController.swift */,
+				25332A8B25172BCE00942334 /* HistoryTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		25332A8625172A5500942334 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				25332A8725172AF900942334 /* Strings.swift */,
+				25332A8925172B1800942334 /* Constants.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
 		3249531C121DB06E617803BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +207,6 @@
 				ABFC4BF51F8169E850C8DC70 /* Pods-MajiExerciseTests.debug.xcconfig */,
 				1C8D3F5E664E6783AB280888 /* Pods-MajiExerciseTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -375,10 +413,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25332A522517245E00942334 /* ViewController.swift in Sources */,
+				25332A85251729D600942334 /* BaseTableViewController.swift in Sources */,
+				25332A832517299C00942334 /* BaseViewController.swift in Sources */,
+				25332A522517245E00942334 /* MainViewController.swift in Sources */,
 				25332A4E2517245E00942334 /* AppDelegate.swift in Sources */,
 				25332A582517245E00942334 /* MajiExercise.xcdatamodeld in Sources */,
+				25332A8C25172BCE00942334 /* HistoryTableViewController.swift in Sources */,
 				25332A502517245E00942334 /* SceneDelegate.swift in Sources */,
+				25332A8825172AF900942334 /* Strings.swift in Sources */,
+				25332A8A25172B1800942334 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
