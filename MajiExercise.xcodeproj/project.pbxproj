@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25332A4E2517245E00942334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A4D2517245E00942334 /* AppDelegate.swift */; };
+		25332A502517245E00942334 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A4F2517245E00942334 /* SceneDelegate.swift */; };
+		25332A522517245E00942334 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A512517245E00942334 /* ViewController.swift */; };
+		25332A552517245E00942334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25332A532517245E00942334 /* Main.storyboard */; };
+		25332A582517245E00942334 /* MajiExercise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25332A562517245E00942334 /* MajiExercise.xcdatamodeld */; };
+		25332A5A2517246000942334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25332A592517246000942334 /* Assets.xcassets */; };
+		25332A5D2517246000942334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25332A5B2517246000942334 /* LaunchScreen.storyboard */; };
+		25332A682517246000942334 /* MajiExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A672517246000942334 /* MajiExerciseTests.swift */; };
+		25332A732517246000942334 /* MajiExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A722517246000942334 /* MajiExerciseUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25332A642517246000942334 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25332A422517245E00942334 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25332A492517245E00942334;
+			remoteInfo = MajiExercise;
+		};
+		25332A6F2517246000942334 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25332A422517245E00942334 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25332A492517245E00942334;
+			remoteInfo = MajiExercise;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25332A4A2517245E00942334 /* MajiExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MajiExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25332A4D2517245E00942334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		25332A4F2517245E00942334 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		25332A512517245E00942334 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		25332A542517245E00942334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		25332A572517245E00942334 /* MajiExercise.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MajiExercise.xcdatamodel; sourceTree = "<group>"; };
+		25332A592517246000942334 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25332A5C2517246000942334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		25332A5E2517246000942334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25332A632517246000942334 /* MajiExerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MajiExerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25332A672517246000942334 /* MajiExerciseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajiExerciseTests.swift; sourceTree = "<group>"; };
+		25332A692517246000942334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25332A6E2517246000942334 /* MajiExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MajiExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25332A722517246000942334 /* MajiExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajiExerciseUITests.swift; sourceTree = "<group>"; };
+		25332A742517246000942334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25332A472517245E00942334 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25332A602517246000942334 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25332A6B2517246000942334 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25332A412517245E00942334 = {
+			isa = PBXGroup;
+			children = (
+				25332A4C2517245E00942334 /* MajiExercise */,
+				25332A662517246000942334 /* MajiExerciseTests */,
+				25332A712517246000942334 /* MajiExerciseUITests */,
+				25332A4B2517245E00942334 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		25332A4B2517245E00942334 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25332A4A2517245E00942334 /* MajiExercise.app */,
+				25332A632517246000942334 /* MajiExerciseTests.xctest */,
+				25332A6E2517246000942334 /* MajiExerciseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25332A4C2517245E00942334 /* MajiExercise */ = {
+			isa = PBXGroup;
+			children = (
+				25332A4D2517245E00942334 /* AppDelegate.swift */,
+				25332A4F2517245E00942334 /* SceneDelegate.swift */,
+				25332A512517245E00942334 /* ViewController.swift */,
+				25332A532517245E00942334 /* Main.storyboard */,
+				25332A592517246000942334 /* Assets.xcassets */,
+				25332A5B2517246000942334 /* LaunchScreen.storyboard */,
+				25332A5E2517246000942334 /* Info.plist */,
+				25332A562517245E00942334 /* MajiExercise.xcdatamodeld */,
+			);
+			path = MajiExercise;
+			sourceTree = "<group>";
+		};
+		25332A662517246000942334 /* MajiExerciseTests */ = {
+			isa = PBXGroup;
+			children = (
+				25332A672517246000942334 /* MajiExerciseTests.swift */,
+				25332A692517246000942334 /* Info.plist */,
+			);
+			path = MajiExerciseTests;
+			sourceTree = "<group>";
+		};
+		25332A712517246000942334 /* MajiExerciseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				25332A722517246000942334 /* MajiExerciseUITests.swift */,
+				25332A742517246000942334 /* Info.plist */,
+			);
+			path = MajiExerciseUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25332A492517245E00942334 /* MajiExercise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25332A772517246000942334 /* Build configuration list for PBXNativeTarget "MajiExercise" */;
+			buildPhases = (
+				25332A462517245E00942334 /* Sources */,
+				25332A472517245E00942334 /* Frameworks */,
+				25332A482517245E00942334 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MajiExercise;
+			productName = MajiExercise;
+			productReference = 25332A4A2517245E00942334 /* MajiExercise.app */;
+			productType = "com.apple.product-type.application";
+		};
+		25332A622517246000942334 /* MajiExerciseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25332A7A2517246000942334 /* Build configuration list for PBXNativeTarget "MajiExerciseTests" */;
+			buildPhases = (
+				25332A5F2517246000942334 /* Sources */,
+				25332A602517246000942334 /* Frameworks */,
+				25332A612517246000942334 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25332A652517246000942334 /* PBXTargetDependency */,
+			);
+			name = MajiExerciseTests;
+			productName = MajiExerciseTests;
+			productReference = 25332A632517246000942334 /* MajiExerciseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		25332A6D2517246000942334 /* MajiExerciseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25332A7D2517246000942334 /* Build configuration list for PBXNativeTarget "MajiExerciseUITests" */;
+			buildPhases = (
+				25332A6A2517246000942334 /* Sources */,
+				25332A6B2517246000942334 /* Frameworks */,
+				25332A6C2517246000942334 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25332A702517246000942334 /* PBXTargetDependency */,
+			);
+			name = MajiExerciseUITests;
+			productName = MajiExerciseUITests;
+			productReference = 25332A6E2517246000942334 /* MajiExerciseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25332A422517245E00942334 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Ting;
+				TargetAttributes = {
+					25332A492517245E00942334 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					25332A622517246000942334 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 25332A492517245E00942334;
+					};
+					25332A6D2517246000942334 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 25332A492517245E00942334;
+					};
+				};
+			};
+			buildConfigurationList = 25332A452517245E00942334 /* Build configuration list for PBXProject "MajiExercise" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 25332A412517245E00942334;
+			productRefGroup = 25332A4B2517245E00942334 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25332A492517245E00942334 /* MajiExercise */,
+				25332A622517246000942334 /* MajiExerciseTests */,
+				25332A6D2517246000942334 /* MajiExerciseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25332A482517245E00942334 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25332A5D2517246000942334 /* LaunchScreen.storyboard in Resources */,
+				25332A5A2517246000942334 /* Assets.xcassets in Resources */,
+				25332A552517245E00942334 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25332A612517246000942334 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25332A6C2517246000942334 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25332A462517245E00942334 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25332A522517245E00942334 /* ViewController.swift in Sources */,
+				25332A4E2517245E00942334 /* AppDelegate.swift in Sources */,
+				25332A582517245E00942334 /* MajiExercise.xcdatamodeld in Sources */,
+				25332A502517245E00942334 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25332A5F2517246000942334 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25332A682517246000942334 /* MajiExerciseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25332A6A2517246000942334 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25332A732517246000942334 /* MajiExerciseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25332A652517246000942334 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25332A492517245E00942334 /* MajiExercise */;
+			targetProxy = 25332A642517246000942334 /* PBXContainerItemProxy */;
+		};
+		25332A702517246000942334 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25332A492517245E00942334 /* MajiExercise */;
+			targetProxy = 25332A6F2517246000942334 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		25332A532517245E00942334 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25332A542517245E00942334 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		25332A5B2517246000942334 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25332A5C2517246000942334 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		25332A752517246000942334 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		25332A762517246000942334 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25332A782517246000942334 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WVH6CEB9F8;
+				INFOPLIST_FILE = MajiExercise/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ting.MajiExercise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		25332A792517246000942334 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WVH6CEB9F8;
+				INFOPLIST_FILE = MajiExercise/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ting.MajiExercise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		25332A7B2517246000942334 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WVH6CEB9F8;
+				INFOPLIST_FILE = MajiExerciseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ting.MajiExerciseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MajiExercise.app/MajiExercise";
+			};
+			name = Debug;
+		};
+		25332A7C2517246000942334 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WVH6CEB9F8;
+				INFOPLIST_FILE = MajiExerciseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ting.MajiExerciseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MajiExercise.app/MajiExercise";
+			};
+			name = Release;
+		};
+		25332A7E2517246000942334 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WVH6CEB9F8;
+				INFOPLIST_FILE = MajiExerciseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ting.MajiExerciseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MajiExercise;
+			};
+			name = Debug;
+		};
+		25332A7F2517246000942334 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WVH6CEB9F8;
+				INFOPLIST_FILE = MajiExerciseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ting.MajiExerciseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MajiExercise;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25332A452517245E00942334 /* Build configuration list for PBXProject "MajiExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25332A752517246000942334 /* Debug */,
+				25332A762517246000942334 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25332A772517246000942334 /* Build configuration list for PBXNativeTarget "MajiExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25332A782517246000942334 /* Debug */,
+				25332A792517246000942334 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25332A7A2517246000942334 /* Build configuration list for PBXNativeTarget "MajiExerciseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25332A7B2517246000942334 /* Debug */,
+				25332A7C2517246000942334 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25332A7D2517246000942334 /* Build configuration list for PBXNativeTarget "MajiExerciseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25332A7E2517246000942334 /* Debug */,
+				25332A7F2517246000942334 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		25332A562517245E00942334 /* MajiExercise.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				25332A572517245E00942334 /* MajiExercise.xcdatamodel */,
+			);
+			currentVersion = 25332A572517245E00942334 /* MajiExercise.xcdatamodel */;
+			path = MajiExercise.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 25332A422517245E00942334 /* Project object */;
+}
