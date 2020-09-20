@@ -13,8 +13,17 @@ class MainViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = Strings.Main.MainTitle
+        getData()
     }
     
-    
+    func getData() {
+        MajiRequest.loadData(target: MajiApi.github, model: GitHubModel.self, success: { (model, data) in
+            print("model=\(model!)")
+            print("data=\(data!)")
+            
+        }) { (code, message) in
+            print("message=\(message)")
+        }
+    }
 }
 

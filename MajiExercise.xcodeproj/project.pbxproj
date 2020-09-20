@@ -21,6 +21,13 @@
 		25332A8825172AF900942334 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A8725172AF900942334 /* Strings.swift */; };
 		25332A8A25172B1800942334 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A8925172B1800942334 /* Constants.swift */; };
 		25332A8C25172BCE00942334 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A8B25172BCE00942334 /* HistoryTableViewController.swift */; };
+		25332A912517318C00942334 /* MajiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A902517318C00942334 /* MajiClient.swift */; };
+		25332A932517364C00942334 /* MajiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A922517364C00942334 /* MajiRequest.swift */; };
+		25332A95251736D000942334 /* MoyaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A94251736D000942334 /* MoyaConfig.swift */; };
+		25332A982517384800942334 /* KeyedDecodingContainer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A972517384800942334 /* KeyedDecodingContainer+Extension.swift */; };
+		25332A9A251738DE00942334 /* MajiApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A99251738DE00942334 /* MajiApi.swift */; };
+		25332A9E25173A7600942334 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A9D25173A7600942334 /* BaseModel.swift */; };
+		25332AA125173AEC00942334 /* GitHubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332AA025173AEC00942334 /* GitHubModel.swift */; };
 		7C1ACE6E1F63AC765B4636DD /* Pods_MajiExerciseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D025760104BD895B79C701 /* Pods_MajiExerciseTests.framework */; };
 		85786E3042E07346418F8C09 /* Pods_MajiExercise_MajiExerciseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BC3B397E79AB1A403D820D /* Pods_MajiExercise_MajiExerciseUITests.framework */; };
 		E6E9D1F71AF5B242B6E67052 /* Pods_MajiExercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 678BD8C51B4C692C548BBE38 /* Pods_MajiExercise.framework */; };
@@ -67,6 +74,13 @@
 		25332A8725172AF900942334 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		25332A8925172B1800942334 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		25332A8B25172BCE00942334 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		25332A902517318C00942334 /* MajiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajiClient.swift; sourceTree = "<group>"; };
+		25332A922517364C00942334 /* MajiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajiRequest.swift; sourceTree = "<group>"; };
+		25332A94251736D000942334 /* MoyaConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaConfig.swift; sourceTree = "<group>"; };
+		25332A972517384800942334 /* KeyedDecodingContainer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+Extension.swift"; sourceTree = "<group>"; };
+		25332A99251738DE00942334 /* MajiApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajiApi.swift; sourceTree = "<group>"; };
+		25332A9D25173A7600942334 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		25332AA025173AEC00942334 /* GitHubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubModel.swift; sourceTree = "<group>"; };
 		678BD8C51B4C692C548BBE38 /* Pods_MajiExercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MajiExercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98FD59D692C90CECB3EE5F86 /* Pods-MajiExercise-MajiExerciseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajiExercise-MajiExerciseUITests.release.xcconfig"; path = "Target Support Files/Pods-MajiExercise-MajiExerciseUITests/Pods-MajiExercise-MajiExerciseUITests.release.xcconfig"; sourceTree = "<group>"; };
 		ABFC4BF51F8169E850C8DC70 /* Pods-MajiExerciseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajiExerciseTests.debug.xcconfig"; path = "Target Support Files/Pods-MajiExerciseTests/Pods-MajiExerciseTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -131,8 +145,11 @@
 				25332A812517295A00942334 /* Controllers */,
 				25332A80251726D400942334 /* Core */,
 				25332A8625172A5500942334 /* Commons */,
+				25332A9F25173AA100942334 /* Enums */,
 				25332A8E25172E8100942334 /* Utils */,
 				25332A8F2517300800942334 /* Network */,
+				25332A9C25173A0800942334 /* Model */,
+				25332A962517380C00942334 /* Extensions */,
 				25332A4D2517245E00942334 /* AppDelegate.swift */,
 				25332A4F2517245E00942334 /* SceneDelegate.swift */,
 				25332A532517245E00942334 /* Main.storyboard */,
@@ -185,6 +202,7 @@
 			children = (
 				25332A8725172AF900942334 /* Strings.swift */,
 				25332A8925172B1800942334 /* Constants.swift */,
+				25332A902517318C00942334 /* MajiClient.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -199,8 +217,35 @@
 		25332A8F2517300800942334 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				25332A922517364C00942334 /* MajiRequest.swift */,
+				25332A94251736D000942334 /* MoyaConfig.swift */,
+				25332A99251738DE00942334 /* MajiApi.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		25332A962517380C00942334 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				25332A972517384800942334 /* KeyedDecodingContainer+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		25332A9C25173A0800942334 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				25332A9D25173A7600942334 /* BaseModel.swift */,
+				25332AA025173AEC00942334 /* GitHubModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		25332A9F25173AA100942334 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		3249531C121DB06E617803BD /* Frameworks */ = {
@@ -429,13 +474,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25332AA125173AEC00942334 /* GitHubModel.swift in Sources */,
 				25332A85251729D600942334 /* BaseTableViewController.swift in Sources */,
 				25332A832517299C00942334 /* BaseViewController.swift in Sources */,
 				25332A522517245E00942334 /* MainViewController.swift in Sources */,
+				25332A9A251738DE00942334 /* MajiApi.swift in Sources */,
+				25332A95251736D000942334 /* MoyaConfig.swift in Sources */,
 				25332A4E2517245E00942334 /* AppDelegate.swift in Sources */,
 				25332A582517245E00942334 /* MajiExercise.xcdatamodeld in Sources */,
 				25332A8C25172BCE00942334 /* HistoryTableViewController.swift in Sources */,
+				25332A982517384800942334 /* KeyedDecodingContainer+Extension.swift in Sources */,
+				25332A9E25173A7600942334 /* BaseModel.swift in Sources */,
+				25332A932517364C00942334 /* MajiRequest.swift in Sources */,
 				25332A502517245E00942334 /* SceneDelegate.swift in Sources */,
+				25332A912517318C00942334 /* MajiClient.swift in Sources */,
 				25332A8825172AF900942334 /* Strings.swift in Sources */,
 				25332A8A25172B1800942334 /* Constants.swift in Sources */,
 			);
