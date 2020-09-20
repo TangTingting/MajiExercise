@@ -8,6 +8,7 @@ target 'MajiExercise' do
   inhibit_all_warnings!
 
   pod 'SnapKit', '~> 5.0.0'
+  pod 'Moya','~> 12.0.1'
 
 
   # Pods for MajiExercise

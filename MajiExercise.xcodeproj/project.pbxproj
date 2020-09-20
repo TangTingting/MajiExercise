@@ -131,6 +131,8 @@
 				25332A812517295A00942334 /* Controllers */,
 				25332A80251726D400942334 /* Core */,
 				25332A8625172A5500942334 /* Commons */,
+				25332A8E25172E8100942334 /* Utils */,
+				25332A8F2517300800942334 /* Network */,
 				25332A4D2517245E00942334 /* AppDelegate.swift */,
 				25332A4F2517245E00942334 /* SceneDelegate.swift */,
 				25332A532517245E00942334 /* Main.storyboard */,
@@ -185,6 +187,20 @@
 				25332A8925172B1800942334 /* Constants.swift */,
 			);
 			path = Commons;
+			sourceTree = "<group>";
+		};
+		25332A8E25172E8100942334 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		25332A8F2517300800942334 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		3249531C121DB06E617803BD /* Frameworks */ = {
