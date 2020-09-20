@@ -31,14 +31,14 @@ class MainViewController: BaseViewController {
         view.addSubview(titleLable)
         
         let contenView = UIView()
-        contenView.backgroundColor = UIColor.white
+        contenView.backgroundColor = .white
         view.addSubview(contenView)
         
         dataTextView.font = Constants.Fonts.systemFontRegular(15)
         dataTextView.textColor = .black
         dataTextView.textAlignment = .left
         dataTextView.isEditable = false
-        dataTextView.backgroundColor = UIColor.white
+        dataTextView.backgroundColor = .white
         contenView.addSubview(dataTextView)
         
         

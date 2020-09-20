@@ -54,10 +54,16 @@ class HistoryRecordViewController: BaseTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let history:History = historyArray[indexPath.row]
+        var isLast = false
+        if indexPath.row == 0 {
+            isLast = true
+        }
         var cell = tableView.dequeueReusableCell(withIdentifier: "HistoryListCell") as? HistoryListCell
            if cell == nil {
              cell = HistoryListCell()
            }
+        cell?.reloadCell(data: history,isLast: isLast)
         cell?.accessoryType = .disclosureIndicator
         cell?.selectionStyle = .none
         return cell!
@@ -66,7 +72,6 @@ class HistoryRecordViewController: BaseTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         gotoDetail()
     }
-    
     
     func gotoDetail(){
         let detailVc = RecordDetailController()

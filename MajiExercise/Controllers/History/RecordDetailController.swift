@@ -13,7 +13,6 @@ class RecordDetailController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = Strings.History.DataDetail
-
     }
     
 

@@ -34,6 +34,9 @@ class CoreDataManager: NSObject {
     // get all history data
     func getAllHistory() -> [History] {
         let fetchRequest: NSFetchRequest = History.fetchRequest()
+        let sort:NSSortDescriptor = NSSortDescriptor(key: "timeLine", ascending: false)
+        let sortDescriptors:NSArray = NSArray(object: sort)
+        fetchRequest.sortDescriptors = sortDescriptors as? [NSSortDescriptor]
         do {
             let result = try context.fetch(fetchRequest)
             return result

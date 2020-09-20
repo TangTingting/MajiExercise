@@ -26,13 +26,11 @@ class HistoryListCell: UITableViewCell {
         super.init(coder: aDecoder)
     }
     
-    
-    
     func initContainerView() {
         timeLabel.font = Constants.Fonts.systemFontRegular(14)
         timeLabel.textAlignment = .left
-        timeLabel.textColor = UIColor.black
-        timeLabel.text = "2020.05.08 23:22:22"
+        timeLabel.textColor = .darkGray
+        timeLabel.text = ""
         addSubview(timeLabel)
         
         line.backgroundColor = Constants.Colors.GrayLineColor
@@ -51,9 +49,13 @@ class HistoryListCell: UITableViewCell {
         }
     }
     
-//    func reloadCell(_ record:History) {
-//        
-//    }
+    func reloadCell(data:History, isLast:Bool) {
+        timeLabel.text = TimeUtils.timeIntervalChangeToTimeStr(timeInterval: Double(data.timeLine))
+        if isLast {
+            timeLabel.font = Constants.Fonts.systemFontBold(15)
+            timeLabel.textColor = .black
+        }
+    }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
