@@ -15,5 +15,9 @@ struct Strings {
     }
     struct History {
         static let HistoryTitle = NSLocalizedString("History Summary", comment: "History Summary")
+        static let ClearData = NSLocalizedString("Clear", comment: "Clear History Data")
+        static let DataDetail = NSLocalizedString("Sumamry Detail", comment: "Sumamry Detail")
     }
+    static let PullToRefresh = NSLocalizedString("Pull to refresh", comment: "Pull to refresh")
+
 }

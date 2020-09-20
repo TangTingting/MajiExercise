@@ -10,23 +10,63 @@ import UIKit
 
 class HistoryRecordViewController: BaseTableViewController {
 
+    let refreshCtrl = UIRefreshControl()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = Strings.History.HistoryTitle
+        let rightItem = UIBarButtonItem(title: Strings.History.ClearData, style: .plain, target: self, action: #selector(clearAllData))
+        navigationItem.rightBarButtonItem = rightItem
+        
+        tableView.rowHeight = 60
+        refreshCtrl.attributedTitle = NSAttributedString(string: Strings.PullToRefresh)
+        refreshCtrl.addTarget(self, action: #selector(refreshAction), for: .valueChanged)
+        tableView.addSubview(refreshCtrl)
+        getHistoryData()
     }
 
+    func getHistoryData(){
+       
+    }
+    
+    @objc func clearAllData(){
+        
+    }
+    
+    @objc func refreshAction() {
+        refreshCtrl.endRefreshing()
+    }
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 10
     }
-
+    
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: "HistoryListCell") as? HistoryListCell
+           if cell == nil {
+             cell = HistoryListCell()
+           }
+        cell?.accessoryType = .disclosureIndicator
+        cell?.selectionStyle = .none
+        return cell!
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        gotoDetail()
+    }
+    
+    
+    func gotoDetail(){
+        let detailVc = RecordDetailController()
+        navigationController?.pushViewController(detailVc, animated: true)
+    }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

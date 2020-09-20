@@ -13,9 +13,9 @@ class BaseTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.barTintColor = Constants.Colors.TintColor
-               view.backgroundColor = Constants.Colors.BackgroundColor
-               let item = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
-               navigationItem.backBarButtonItem = item
+        let item = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
+        navigationItem.backBarButtonItem = item
+        tableView.separatorStyle = .none
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

@@ -28,6 +28,8 @@
 		25332A9A251738DE00942334 /* MajiApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A99251738DE00942334 /* MajiApi.swift */; };
 		25332A9E25173A7600942334 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A9D25173A7600942334 /* BaseModel.swift */; };
 		25332AA125173AEC00942334 /* GitHubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332AA025173AEC00942334 /* GitHubModel.swift */; };
+		25A278A325177E15004E0D28 /* HistoryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A278A225177E15004E0D28 /* HistoryListCell.swift */; };
+		25A278A525177F04004E0D28 /* RecordDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A278A425177F04004E0D28 /* RecordDetailController.swift */; };
 		7C1ACE6E1F63AC765B4636DD /* Pods_MajiExerciseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D025760104BD895B79C701 /* Pods_MajiExerciseTests.framework */; };
 		85786E3042E07346418F8C09 /* Pods_MajiExercise_MajiExerciseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BC3B397E79AB1A403D820D /* Pods_MajiExercise_MajiExerciseUITests.framework */; };
 		E6E9D1F71AF5B242B6E67052 /* Pods_MajiExercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 678BD8C51B4C692C548BBE38 /* Pods_MajiExercise.framework */; };
@@ -81,6 +83,8 @@
 		25332A99251738DE00942334 /* MajiApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajiApi.swift; sourceTree = "<group>"; };
 		25332A9D25173A7600942334 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		25332AA025173AEC00942334 /* GitHubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubModel.swift; sourceTree = "<group>"; };
+		25A278A225177E15004E0D28 /* HistoryListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListCell.swift; sourceTree = "<group>"; };
+		25A278A425177F04004E0D28 /* RecordDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordDetailController.swift; sourceTree = "<group>"; };
 		678BD8C51B4C692C548BBE38 /* Pods_MajiExercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MajiExercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98FD59D692C90CECB3EE5F86 /* Pods-MajiExercise-MajiExerciseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajiExercise-MajiExerciseUITests.release.xcconfig"; path = "Target Support Files/Pods-MajiExercise-MajiExerciseUITests/Pods-MajiExercise-MajiExerciseUITests.release.xcconfig"; sourceTree = "<group>"; };
 		ABFC4BF51F8169E850C8DC70 /* Pods-MajiExerciseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajiExerciseTests.debug.xcconfig"; path = "Target Support Files/Pods-MajiExerciseTests/Pods-MajiExerciseTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -191,8 +195,8 @@
 		25332A812517295A00942334 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				25332A512517245E00942334 /* MainViewController.swift */,
-				25332A8B25172BCE00942334 /* HistoryRecordViewController.swift */,
+				25A278A025177DE3004E0D28 /* History */,
+				25A2789F25177DD7004E0D28 /* Main */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -246,6 +250,32 @@
 			children = (
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		25A2789F25177DD7004E0D28 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				25332A512517245E00942334 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		25A278A025177DE3004E0D28 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				25A278A125177DF8004E0D28 /* Views */,
+				25332A8B25172BCE00942334 /* HistoryRecordViewController.swift */,
+				25A278A425177F04004E0D28 /* RecordDetailController.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		25A278A125177DF8004E0D28 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25A278A225177E15004E0D28 /* HistoryListCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		3249531C121DB06E617803BD /* Frameworks */ = {
@@ -477,6 +507,7 @@
 				25332AA125173AEC00942334 /* GitHubModel.swift in Sources */,
 				25332A85251729D600942334 /* BaseTableViewController.swift in Sources */,
 				25332A832517299C00942334 /* BaseViewController.swift in Sources */,
+				25A278A525177F04004E0D28 /* RecordDetailController.swift in Sources */,
 				25332A522517245E00942334 /* MainViewController.swift in Sources */,
 				25332A9A251738DE00942334 /* MajiApi.swift in Sources */,
 				25332A95251736D000942334 /* MoyaConfig.swift in Sources */,
@@ -489,6 +520,7 @@
 				25332A502517245E00942334 /* SceneDelegate.swift in Sources */,
 				25332A912517318C00942334 /* MajiClient.swift in Sources */,
 				25332A8825172AF900942334 /* Strings.swift in Sources */,
+				25A278A325177E15004E0D28 /* HistoryListCell.swift in Sources */,
 				25332A8A25172B1800942334 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
