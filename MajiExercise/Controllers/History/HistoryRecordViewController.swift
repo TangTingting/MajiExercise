@@ -11,6 +11,7 @@ import UIKit
 class HistoryRecordViewController: BaseTableViewController {
 
     let refreshCtrl = UIRefreshControl()
+    var historyArray : [History]=[]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,23 +19,28 @@ class HistoryRecordViewController: BaseTableViewController {
         let rightItem = UIBarButtonItem(title: Strings.History.ClearData, style: .plain, target: self, action: #selector(clearAllData))
         navigationItem.rightBarButtonItem = rightItem
         
+        
+        
         tableView.rowHeight = 60
         refreshCtrl.attributedTitle = NSAttributedString(string: Strings.PullToRefresh)
         refreshCtrl.addTarget(self, action: #selector(refreshAction), for: .valueChanged)
         tableView.addSubview(refreshCtrl)
+        
         getHistoryData()
     }
 
     func getHistoryData(){
-       
-    }
-    
-    @objc func clearAllData(){
-        
+       historyArray =  CoreDataManager.shared.getAllHistory()
+        tableView.reloadData()
     }
     
     @objc func refreshAction() {
         refreshCtrl.endRefreshing()
+    }
+    
+    @objc func clearAllData(){
+        CoreDataManager.shared.deleteAllHistory()
+        getHistoryData()
     }
     
     // MARK: - Table view data source
@@ -44,9 +50,8 @@ class HistoryRecordViewController: BaseTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return historyArray.count
     }
-    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "HistoryListCell") as? HistoryListCell

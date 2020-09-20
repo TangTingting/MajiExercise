@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import CoreData
 
 class MainViewController: BaseViewController {
     
@@ -16,8 +17,6 @@ class MainViewController: BaseViewController {
     let dataTextView = UITextView()
     var dataDic:NSDictionary?
     var dataText = ""
-    
-    var timer: Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,32 +60,20 @@ class MainViewController: BaseViewController {
             make.bottom.equalTo(view.snp_bottomMargin).offset(-10)
         }
         
-        getData()
+        getLastData()
     }
     
-    
-    
-    @objc func getData() {
-        MajiRequest.loadData(target: MajiApi.github, model: GitHubModel.self, success: { (model, data) in
-            if let dict = try? JSONSerialization.jsonObject(with: data!,
-                                                            options: .mutableContainers) as? [String : Any] {
-                for (key, value) in dict {
-                    self.dataText = self.dataText + key + " :\n"
-                    self.dataText = self.dataText + (value as! String) + "\n\n";
-                }
-                self.dataTextView.text = self.dataText
+    @objc func getLastData() {
+        let fetchRequest: NSFetchRequest = History.fetchRequest()
+        fetchRequest.fetchLimit = 1
+        do {
+            let result = try CoreDataManager.shared.context.fetch(fetchRequest)
+            if result.count >= 1 {
+                let lastData = result.first! as History
+                dataTextView.text = lastData.dataText
             }
-        }) { (code, message) in
-            print("message=\(message)")
-        }
-    }
-    func createTimer() {
-        if timer == nil {
-            timer = Timer.scheduledTimer(timeInterval: 5.0,
-                                         target: self,
-                                         selector: #selector(getData),
-                                         userInfo: nil,
-                                         repeats: true)
+        } catch {
+            fatalError();
         }
     }
     
