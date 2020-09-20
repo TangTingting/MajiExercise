@@ -16,6 +16,9 @@
 		25332A5D2517246000942334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25332A5B2517246000942334 /* LaunchScreen.storyboard */; };
 		25332A682517246000942334 /* MajiExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A672517246000942334 /* MajiExerciseTests.swift */; };
 		25332A732517246000942334 /* MajiExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332A722517246000942334 /* MajiExerciseUITests.swift */; };
+		7C1ACE6E1F63AC765B4636DD /* Pods_MajiExerciseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D025760104BD895B79C701 /* Pods_MajiExerciseTests.framework */; };
+		85786E3042E07346418F8C09 /* Pods_MajiExercise_MajiExerciseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BC3B397E79AB1A403D820D /* Pods_MajiExercise_MajiExerciseUITests.framework */; };
+		E6E9D1F71AF5B242B6E67052 /* Pods_MajiExercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 678BD8C51B4C692C548BBE38 /* Pods_MajiExercise.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C8D3F5E664E6783AB280888 /* Pods-MajiExerciseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajiExerciseTests.release.xcconfig"; path = "Target Support Files/Pods-MajiExerciseTests/Pods-MajiExerciseTests.release.xcconfig"; sourceTree = "<group>"; };
+		23807A96942C1F48040F4A4E /* Pods-MajiExercise-MajiExerciseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajiExercise-MajiExerciseUITests.debug.xcconfig"; path = "Target Support Files/Pods-MajiExercise-MajiExerciseUITests/Pods-MajiExercise-MajiExerciseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		23D9ECE03AD11DCBF7307F76 /* Pods-MajiExercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajiExercise.debug.xcconfig"; path = "Target Support Files/Pods-MajiExercise/Pods-MajiExercise.debug.xcconfig"; sourceTree = "<group>"; };
 		25332A4A2517245E00942334 /* MajiExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MajiExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25332A4D2517245E00942334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25332A4F2517245E00942334 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +57,12 @@
 		25332A6E2517246000942334 /* MajiExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MajiExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25332A722517246000942334 /* MajiExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajiExerciseUITests.swift; sourceTree = "<group>"; };
 		25332A742517246000942334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		678BD8C51B4C692C548BBE38 /* Pods_MajiExercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MajiExercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98FD59D692C90CECB3EE5F86 /* Pods-MajiExercise-MajiExerciseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajiExercise-MajiExerciseUITests.release.xcconfig"; path = "Target Support Files/Pods-MajiExercise-MajiExerciseUITests/Pods-MajiExercise-MajiExerciseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ABFC4BF51F8169E850C8DC70 /* Pods-MajiExerciseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajiExerciseTests.debug.xcconfig"; path = "Target Support Files/Pods-MajiExerciseTests/Pods-MajiExerciseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B1D025760104BD895B79C701 /* Pods_MajiExerciseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MajiExerciseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2C35B51132B1FD6AF772123 /* Pods-MajiExercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajiExercise.release.xcconfig"; path = "Target Support Files/Pods-MajiExercise/Pods-MajiExercise.release.xcconfig"; sourceTree = "<group>"; };
+		D7BC3B397E79AB1A403D820D /* Pods_MajiExercise_MajiExerciseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MajiExercise_MajiExerciseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6E9D1F71AF5B242B6E67052 /* Pods_MajiExercise.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C1ACE6E1F63AC765B4636DD /* Pods_MajiExerciseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85786E3042E07346418F8C09 /* Pods_MajiExercise_MajiExerciseUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,8 @@
 				25332A662517246000942334 /* MajiExerciseTests */,
 				25332A712517246000942334 /* MajiExerciseUITests */,
 				25332A4B2517245E00942334 /* Products */,
+				380EE7F3F467D1AE7778E94A /* Pods */,
+				3249531C121DB06E617803BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +148,30 @@
 			path = MajiExerciseUITests;
 			sourceTree = "<group>";
 		};
+		3249531C121DB06E617803BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				678BD8C51B4C692C548BBE38 /* Pods_MajiExercise.framework */,
+				D7BC3B397E79AB1A403D820D /* Pods_MajiExercise_MajiExerciseUITests.framework */,
+				B1D025760104BD895B79C701 /* Pods_MajiExerciseTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		380EE7F3F467D1AE7778E94A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23D9ECE03AD11DCBF7307F76 /* Pods-MajiExercise.debug.xcconfig */,
+				C2C35B51132B1FD6AF772123 /* Pods-MajiExercise.release.xcconfig */,
+				23807A96942C1F48040F4A4E /* Pods-MajiExercise-MajiExerciseUITests.debug.xcconfig */,
+				98FD59D692C90CECB3EE5F86 /* Pods-MajiExercise-MajiExerciseUITests.release.xcconfig */,
+				ABFC4BF51F8169E850C8DC70 /* Pods-MajiExerciseTests.debug.xcconfig */,
+				1C8D3F5E664E6783AB280888 /* Pods-MajiExerciseTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +179,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25332A772517246000942334 /* Build configuration list for PBXNativeTarget "MajiExercise" */;
 			buildPhases = (
+				EF8B9FB5B78E57EA75336CB7 /* [CP] Check Pods Manifest.lock */,
 				25332A462517245E00942334 /* Sources */,
 				25332A472517245E00942334 /* Frameworks */,
 				25332A482517245E00942334 /* Resources */,
@@ -155,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25332A7A2517246000942334 /* Build configuration list for PBXNativeTarget "MajiExerciseTests" */;
 			buildPhases = (
+				F97CC84E6BD3FFBA7C520732 /* [CP] Check Pods Manifest.lock */,
 				25332A5F2517246000942334 /* Sources */,
 				25332A602517246000942334 /* Frameworks */,
 				25332A612517246000942334 /* Resources */,
@@ -173,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25332A7D2517246000942334 /* Build configuration list for PBXNativeTarget "MajiExerciseUITests" */;
 			buildPhases = (
+				B2D15E0EA5BC942B8F0E6496 /* [CP] Check Pods Manifest.lock */,
 				25332A6A2517246000942334 /* Sources */,
 				25332A6B2517246000942334 /* Frameworks */,
 				25332A6C2517246000942334 /* Resources */,
@@ -256,6 +300,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B2D15E0EA5BC942B8F0E6496 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MajiExercise-MajiExerciseUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF8B9FB5B78E57EA75336CB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MajiExercise-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F97CC84E6BD3FFBA7C520732 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MajiExerciseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		25332A462517245E00942334 /* Sources */ = {
@@ -436,6 +549,7 @@
 		};
 		25332A782517246000942334 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23D9ECE03AD11DCBF7307F76 /* Pods-MajiExercise.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +568,7 @@
 		};
 		25332A792517246000942334 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2C35B51132B1FD6AF772123 /* Pods-MajiExercise.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +587,7 @@
 		};
 		25332A7B2517246000942334 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABFC4BF51F8169E850C8DC70 /* Pods-MajiExerciseTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +610,7 @@
 		};
 		25332A7C2517246000942334 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C8D3F5E664E6783AB280888 /* Pods-MajiExerciseTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +633,7 @@
 		};
 		25332A7E2517246000942334 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23807A96942C1F48040F4A4E /* Pods-MajiExercise-MajiExerciseUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +654,7 @@
 		};
 		25332A7F2517246000942334 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98FD59D692C90CECB3EE5F86 /* Pods-MajiExercise-MajiExerciseUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
