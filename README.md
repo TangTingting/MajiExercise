@@ -1,9 +1,9 @@
-Maji Excercise
+Maji Excercise 
 
 # Setup
-    ```shell
+    #```
     pod install
-    ```
+    #```
 
 # Dependencies
     'SnapKit'
