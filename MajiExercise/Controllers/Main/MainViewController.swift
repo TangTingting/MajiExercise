@@ -15,12 +15,14 @@ class MainViewController: BaseViewController {
     var modle : GitHubModel?
     let titleLable = UILabel()
     let dataTextView = UITextView()
-    var dataDic:NSDictionary?
-    var dataText = ""
+    var data: History?
+    var isMain = true
     
     
     override func viewWillAppear(_ animated: Bool) {
-        NotificationCenter.default.addObserver(self, selector: #selector(updateData(notification:)), name: NSNotification.Name(rawValue: "newData"), object: nil)
+        if isMain{
+            NotificationCenter.default.addObserver(self, selector: #selector(updateData(notification:)), name: NSNotification.Name(rawValue: "newData"), object: nil)
+        }
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -29,9 +31,11 @@ class MainViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = Strings.Main.MainTitle
-        let rightItem = UIBarButtonItem(image: UIImage(named: "history_ico"), style:.plain , target:self, action: #selector(gotoHistory))
-        navigationItem.rightBarButtonItem = rightItem
+        if isMain {
+            title = Strings.Main.MainTitle
+            let rightItem = UIBarButtonItem(image: UIImage(named: "history_ico"), style:.plain , target:self, action: #selector(gotoHistory))
+            navigationItem.rightBarButtonItem = rightItem
+        }
         
         titleLable.font = Constants.Fonts.systemFontBold(16)
         titleLable.textColor = .black
@@ -49,7 +53,6 @@ class MainViewController: BaseViewController {
         dataTextView.isEditable = false
         dataTextView.backgroundColor = .white
         contenView.addSubview(dataTextView)
-        
         
         titleLable.snp.makeConstraints { (make) -> Void in
             make.top.equalTo(view.snp_topMargin).offset(20)
@@ -69,7 +72,13 @@ class MainViewController: BaseViewController {
             make.bottom.equalTo(view.snp_bottomMargin).offset(-10)
         }
         
-        getLastData()
+        if isMain {
+            getLastData()
+        }else{
+            if (data != nil) {
+                dataTextView.text = data!.dataText
+            }
+        }
     }
     
     @objc func getLastData() {

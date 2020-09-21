@@ -102,7 +102,8 @@ class HistoryRecordViewController: BaseTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        gotoDetail()
+        let history:History = historyArray[indexPath.row]
+        gotoDetail(data: history)
     }
     
     override func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
@@ -113,8 +114,11 @@ class HistoryRecordViewController: BaseTableViewController {
         return newDataComing ? self.newMsgView : nil
     }
     
-    func gotoDetail(){
-        let detailVc = RecordDetailController()
+    func gotoDetail(data:History){
+        let detailVc = MainViewController()
+        detailVc.isMain = false
+        detailVc.title = Strings.History.DataDetail
+        detailVc.data = data
         navigationController?.pushViewController(detailVc, animated: true)
     }
     

@@ -30,7 +30,6 @@
 		25332AA125173AEC00942334 /* GitHubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25332AA025173AEC00942334 /* GitHubModel.swift */; };
 		255D77992517A23000B819AF /* TimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255D77982517A23000B819AF /* TimeUtils.swift */; };
 		25A278A325177E15004E0D28 /* HistoryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A278A225177E15004E0D28 /* HistoryListCell.swift */; };
-		25A278A525177F04004E0D28 /* RecordDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A278A425177F04004E0D28 /* RecordDetailController.swift */; };
 		25A278A7251788AA004E0D28 /* MajiFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A278A6251788AA004E0D28 /* MajiFunctions.swift */; };
 		25A278AA25178A3E004E0D28 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A278A925178A3E004E0D28 /* CoreDataManager.swift */; };
 		7C1ACE6E1F63AC765B4636DD /* Pods_MajiExerciseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D025760104BD895B79C701 /* Pods_MajiExerciseTests.framework */; };
@@ -88,7 +87,6 @@
 		25332AA025173AEC00942334 /* GitHubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubModel.swift; sourceTree = "<group>"; };
 		255D77982517A23000B819AF /* TimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeUtils.swift; sourceTree = "<group>"; };
 		25A278A225177E15004E0D28 /* HistoryListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListCell.swift; sourceTree = "<group>"; };
-		25A278A425177F04004E0D28 /* RecordDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordDetailController.swift; sourceTree = "<group>"; };
 		25A278A6251788AA004E0D28 /* MajiFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajiFunctions.swift; sourceTree = "<group>"; };
 		25A278A925178A3E004E0D28 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		678BD8C51B4C692C548BBE38 /* Pods_MajiExercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MajiExercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -266,7 +264,6 @@
 			children = (
 				25A278A125177DF8004E0D28 /* Cells */,
 				25332A8B25172BCE00942334 /* HistoryRecordViewController.swift */,
-				25A278A425177F04004E0D28 /* RecordDetailController.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -516,7 +513,6 @@
 				25332AA125173AEC00942334 /* GitHubModel.swift in Sources */,
 				25332A85251729D600942334 /* BaseTableViewController.swift in Sources */,
 				25332A832517299C00942334 /* BaseViewController.swift in Sources */,
-				25A278A525177F04004E0D28 /* RecordDetailController.swift in Sources */,
 				25332A522517245E00942334 /* MainViewController.swift in Sources */,
 				25332A9A251738DE00942334 /* MajiApi.swift in Sources */,
 				255D77992517A23000B819AF /* TimeUtils.swift in Sources */,
